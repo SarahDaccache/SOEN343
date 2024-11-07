@@ -1,0 +1,70 @@
+/* Header.css */
+
+/* Header container */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 30px 15px;
+    border-bottom: 2px solid #D9D9D9;
+    margin: 0;
+  }
+
+  
+  
+  /* Logo style */
+  .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  /* Navigation style */
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* General link style */
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Default link hover effect */
+  .nav-link:hover {
+    background-color: #E9EFEC;
+    color: black;
+  }
+  /* Active state when clicked */
+  .nav-link:active {
+    background-color: #4D869C;
+    color: white;
+  }
+  
+  
+  /* Sign-in button */
+  .sign-in-button {
+    background-color: #E9EFEC;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #4D869C;
+    color: white;
+  }
+  
+  /* Register button */
+  .register-button {
+    background-color: #4D869C;
+    color: white;
+  }
+  
+  .register-button:hover {
+    background-color: #E9EFEC;
+    color: black;
+  }
+  
