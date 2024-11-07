@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+
+    <h1>Deliveries List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Pickup</th>
+                <th>Dropoff</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for del in deliveries %}
+            <tr>
+                <td>{{ del.id }}</td>
+                <td>{{ del.sender }}</td>
+                <td>{{ del.recipient }}</td>
+                <td>{{ del.package.pickup }}</td>
+                <td>{{ del.package.dropoff }}</td>
+                <td>{{ del.package.weight }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </body>
+</html>
