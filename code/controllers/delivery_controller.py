@@ -19,4 +19,3 @@ class DeliveryController:
        DeliveryController.del_id += 1
        delivery = Delivery(id, sender, recipient, package)
        DeliveryController.deliveries.append(delivery)
-    
