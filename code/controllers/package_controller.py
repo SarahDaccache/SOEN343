@@ -2,9 +2,13 @@ from models import Package
 
 class PackageController:
     pack_id = 0
+    instance = None
 
     def getInstance():
-        return PackageController()
+        if PackageController.instance is None:
+            PackageController.instance = PackageController()
+
+        return PackageController.instance
     
     def extract_package(self, form):
        id = PackageController.pack_id
