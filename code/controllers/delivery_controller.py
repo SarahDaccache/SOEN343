@@ -3,10 +3,14 @@ from .package_controller import PackageController
 
 class DeliveryController:
     del_id = 0
+    instance = None
     deliveries = list()
 
     def getInstance():
-        return DeliveryController()
+        if DeliveryController.instance is None:
+            DeliveryController.instance = DeliveryController()
+
+        return DeliveryController.instance
     
     def extract_delivery(self, form):
        id = DeliveryController.del_id
